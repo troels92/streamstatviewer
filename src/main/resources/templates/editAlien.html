@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Alien</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="content">
+    <div class="content-inside">
+        <div th:replace="fragments/nav.html :: navigation"></div>
+
+        <h1>Edit Alien</h1>
+
+        <form action="/updateAlien" method="post">
+            <input type="hidden" th:value="${alien.aid}" name="aid" >
+            <p>Name:</p>
+            <input type="text" th:value="${alien.aname}" name="aname" >
+            <p>Price:</p>
+            <input type="text" th:value="${alien.tech}" name="tech">
+            <br>
+            <input type="submit" value="Update" name="alien">
+        </form>
+    </div>
+</div>
+</body>
+</html>

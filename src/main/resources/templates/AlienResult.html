@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Alien Result</title>
+    <link rel="stylesheet" href="/style.css">
+
+
+</head>
+<body>
+<div class="content">
+    <div class="content-inside">
+        <div th:replace="fragments/nav.html :: navigation"></div>
+
+        <td th:text="${alien.aname}"></td>
+        <td th:text="${alien.tech}"></td>
+    </div>
+</div>
+</body>
+</html>

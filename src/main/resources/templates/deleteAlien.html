@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>Delete Alien</title>
+</head>
+<body>
+<div th:replace="fragments/nav.html :: navigation"></div>
+
+<h1>Delete</h1>
+<h2>Are you sure you want to delete:</h2>
+<p th:text="${alien.aname}"></p>
+<form action="/deleteAlien" method="post">
+    <a href="index">
+        <input type="submit" value="YES" name="delete">
+    </a>
+</form>
+<a href="AllAliens">
+    <button>NO</button>
+</a>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Alien</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="content">
+    <div class="content-inside">
+        <div th:replace="fragments/nav.html :: navigation"></div>
+
+        <h2>Create alien</h2>
+
+        <form action="addAlien">
+            Alien id:
+            <br>
+            <input type="text" name="aid"><br>
+            <br>
+            Alien name:
+            <br>
+            <input type="text" name="aname"><br>
+            <br>
+            Tech:
+            <br>
+            <input type="text" name="tech"><br>
+            <br>
+            <input type="submit"><br>
+        </form>
+    </div>
+</div>
+</body>
+</html>

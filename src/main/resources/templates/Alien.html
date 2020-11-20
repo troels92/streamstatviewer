@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Alien search</title>
+    <link rel="stylesheet" href="/style.css">
+
+
+</head>
+<body>
+<div class="content">
+    <div class="content-inside">
+        <div th:replace="fragments/nav.html :: navigation"></div>
+
+        <h2>Find Alien (by id):</h2>
+
+        <form action="getAlien">
+            <br>
+            <input type="text" name="aid"><br>
+            <br>
+            <input type="submit"><br>
+        </form>
+    </div>
+</div>
+<div th:replace="fragments/footer.html :: footer"></div>
+
+</body>
+</html>

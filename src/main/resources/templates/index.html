@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Frontpage</title>
+    <link rel="stylesheet" href="/style.css">
+
+
+</head>
+<body>
+<div class="content">
+    <div class="content-inside">
+        <div th:replace="fragments/nav.html :: navigation"></div>
+            <h1>Welcome to Alien crud website!</h1>
+            <h2>Here you will find a CRUD for Aliens.</h2>
+
+            <p>
+                CRUD stands for:
+                <br>
+                <br>
+                <a href="createAlien">Create</a>
+                <br>
+                <a href="AllAliens">Read</a> / <a href="Alien">Read, but more specific</a>
+                <br>
+                Update
+                <br>
+                Delete
+                <br>
+                <br>
+                Have a great day! :)
+            </p>
+    </div>
+</div>
+</body>
+</html>
